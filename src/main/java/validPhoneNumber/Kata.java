@@ -11,7 +11,11 @@ public class Kata {
 		  //[(] [)] - one char
 		  // {n} -count for repeat
 		  
-		  Pattern pattern = Pattern.compile("[(]\\d{3}[)]\\s\\d{3}-\\d{4}");
-		  return pattern.matcher(phoneNumber).matches();
+//		  Pattern pattern = Pattern.compile("[(]\\d{3}[)]\\s\\d{3}-\\d{4}");
+//		  return pattern.matcher(phoneNumber).matches();
+		  
+		  String pattern = "[(]\\d{3}[)]\\s\\d{3}-\\d{4}";
+				  
+		  return phoneNumber.matches(pattern);
 	  }
 }
